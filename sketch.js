@@ -3,13 +3,11 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-var ground,line1,line2,line3,ball,dustbin,dustbinIMG,paperIMG;
+var ground,line1,line2,line3,ball,dustbin;
 
 function preload()
 {
-	dustbinIMG=loadImage("dustbinGreen.png");
-	paperIMG=loadImage("paper.png");
-
+	
 
 }
 
@@ -20,8 +18,6 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	dustbinIMG.addImage(dustbinGreen.png);
-	paperIMG.addImage(paper.png);
 	
 	ground=new Ground(400,690,800,20);
 
@@ -39,7 +35,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(180);
   
   ground.display();
   dustbin.display();
